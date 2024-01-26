@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Szövegszerkesztő</title>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="text-editor">
+        <p class="text-editor__error-text"></p>
+        <textarea name="inputfield" id="" cols="30" rows="10" class="inputfield"></textarea>
+        <div class="text-editor__buttons">
+            <input type="file" id="fileInput" accept="text/plain" class="text-editor__buttons--open" onchange="loadtxt()">
+            <label for="fileInput" class="text-editor__buttons--open-label" >Megnyitás</label>
+            <button class="text-editor__buttons--save" onclick="savetxt()">Mentés</button>
+        </div>
+        <input placeholder="filenév" type="text" class="filename" name="" id="">
+    </div>
+</body>
+</html>
